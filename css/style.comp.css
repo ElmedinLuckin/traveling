@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  box-sizing: border-box;
+  background-color: #000; }
+
+.btn {
+  letter-spacing: 4px;
+  padding: 0.3rem 2rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  transition: all 0.2s ease-in-out; }
+  .btn__links--singup:hover {
+    color: #d12e2e;
+    border: 1px solid #d12e2e; }
+  .btn__links--login:hover {
+    color: yellowgreen;
+    border: 1px solid yellowgreen; }
+  .btn__header {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+    border: 2px solid #fff; }
+    .btn__header:hover {
+      color: #d12e2e;
+      border: 2px solid #d12e2e; }
+  .btn--view {
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem; }
+    .btn--view:hover {
+      background-color: #1f91ee; }
+  .btn--like {
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem; }
+    .btn--like:hover {
+      background-color: #d12e2e; }
+
+.cards {
+  border: 1px solid #857a7a;
+  border-radius: 3px;
+  margin-top: 3rem; }
+  .cards__img {
+    height: 12rem;
+    width: 100%;
+    border-radius: 2px; }
+  .cards__country {
+    color: #fff;
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 0.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-image: linear-gradient(to right, #353131, #000); }
+  .cards__description {
+    color: #000;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    background-color: #fff; }
+  .cards__price {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.8rem;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem; }
+
+.footer {
+  background-color: black;
+  grid-column: 1/-1; }
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(/img/photo-1.webp);
+  height: 132vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
+  .header__title {
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 0.7rem;
+    margin-top: 13rem; }
+  .header__subtitle {
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 1.2rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+
+.fas {
+  font-size: 0.9rem;
+  padding-right: 0.5rem; }
+
+.discover-section {
+  margin-top: -32vh;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding-bottom: 12rem;
+  padding-top: 10rem;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-image: linear-gradient(to right bottom, #353131, #000);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%); }
+
+.objects-section {
+  background-color: #fff;
+  margin-top: -22vh;
+  padding-top: 10rem; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem; }
+  .nav__logo {
+    color: #fff;
+    font-family: "Major Mono Display", monospace;
+    cursor: pointer;
+    padding-left: 0.5rem; }
+  .nav__span {
+    color: #d12e2e;
+    font-size: 1.2rem; }
+  .nav__list {
+    list-style: none;
+    margin-left: 8rem;
+    margin-top: 0.2rem; }
+  .nav__item {
+    display: inline-block;
+    text-transform: uppercase; }
+  .nav__item:not(:last-child) {
+    padding-right: 3rem; }
+  .nav__links {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 3px;
+    transition: all 0.2s ease-in-out; }
+    .nav__links:hover {
+      color: #d12e2e; }
+  .nav__btn {
+    padding-right: 0.5rem; }
+
+.objects {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .objects__object {
+    padding: 2rem 2.5rem;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 4px; }
+  .objects__img {
+    height: 12rem;
+    width: 100%;
+    border-bottom: none;
+    border-radius: 3px; }
+  .objects__description {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    background-image: linear-gradient(to right, #353131, #000);
+    border-radius: 3px; }

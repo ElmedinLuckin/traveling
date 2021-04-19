@@ -1,0 +1,53 @@
+.btn {
+  letter-spacing: 4px;
+  padding: 0.3rem 2rem;
+  border: 1px solid $color-white;
+  border-radius: 5px;
+  color: $color-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  transition: all 0.2s ease-in-out;
+
+  &__links {
+    &--singup:hover {
+      color: $color-primary;
+      border: 1px solid $color-primary;
+    }
+    &--login:hover {
+      color: yellowgreen;
+      border: 1px solid yellowgreen;
+    }
+  }
+
+  &__header {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+    border: 2px solid $color-white;
+
+    &:hover {
+      color: $color-primary;
+      border: 2px solid $color-primary;
+    }
+  }
+
+  &--view {
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      background-color: $color-blue;
+    }
+  }
+
+  &--like {
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+}

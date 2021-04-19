@@ -1,0 +1,50 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  width: 100%;
+  &__logo {
+    color: $color-white;
+    font-family: "Major Mono Display", monospace;
+    cursor: pointer;
+    padding-left: 0.5rem;
+  }
+
+  &__span {
+    color: $color-primary;
+    font-size: 1.2rem;
+  }
+
+  &__list {
+    list-style: none;
+    margin-left: 8rem;
+    margin-top: 0.2rem;
+  }
+
+  &__item {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  &__item:not(:last-child) {
+    padding-right: 3rem;
+  }
+
+  &__links {
+    color: $color-white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 3px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__btn {
+    padding-right: 0.5rem;
+  }
+}
