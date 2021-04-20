@@ -8,8 +8,18 @@
   text-decoration: none;
   font-family: "Bebas Neue", cursive;
   transition: all 0.2s ease-in-out;
+  font-size: 1.7rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 0.3 1rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1rem;
+  }
 
   &__links {
+    align-content: center;
     &--singup:hover {
       color: $color-primary;
       border: 1px solid $color-primary;

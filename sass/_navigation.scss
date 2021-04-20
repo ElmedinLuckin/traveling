@@ -4,40 +4,72 @@
   justify-content: space-between;
   padding-top: 1rem;
   width: 100%;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-top: 0;
+    font-size: 1rem;
+  }
+
   &__logo {
     color: $color-white;
     font-family: "Major Mono Display", monospace;
     cursor: pointer;
     padding-left: 0.5rem;
+    font-size: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.8rem;
+      padding-top: 1rem;
+    }
   }
 
   &__span {
     color: $color-primary;
-    font-size: 1.2rem;
+    font-size: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1rem;
+    }
   }
 
   &__list {
     list-style: none;
     margin-left: 8rem;
     margin-top: 0.2rem;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-left: 3rem;
+    }
   }
 
   &__item {
     display: inline-block;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
   }
 
   &__item:not(:last-child) {
     padding-right: 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+      padding-right: 1rem;
+    }
   }
 
   &__links {
     color: $color-white;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-family: "Bebas Neue", cursive;
     letter-spacing: 3px;
     transition: all 0.2s ease-in-out;
+
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
 
     &:hover {
       color: $color-primary;
@@ -46,5 +78,9 @@
 
   &__btn {
     padding-right: 0.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-top: 1rem;
+    }
   }
 }
